@@ -115,7 +115,7 @@ impl Sim {
             if speed > MAX_SPEED {
                 vel = (vel / speed) * MAX_SPEED;
             } else if speed < MIN_SPEED {
-                vel = (vel / speed) * MAX_SPEED;
+                vel = (vel / speed) * MIN_SPEED;
             }
 
             // Apply velocity
